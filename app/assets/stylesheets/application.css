@@ -12,5 +12,48 @@
  *
  *= require_tree .
  *= require_self
- *= require simple_calendar
  */
+
+body{
+  background-image: url(https://s-media-cache-ak0.pinimg.com/736x/45/e9/18/45e918a4ac64084b5ea5a5e2d7b67471.jpg);
+  background-size: cover;
+}
+ul {
+  padding-right: 30px;
+}
+li{
+  margin-right: auto;
+  padding: 10px;
+}
+
+tr td{
+  padding-right: 20px;
+}
+
+td a {
+  margin-left: 20px;
+}
+div.lift {
+  margin-top: 100px;
+}
+.lift{
+  padding: 30px;
+  width: 80%;
+  height: inherit;
+  background: #fff;
+  opacity: 0.89;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+.logo {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: auto;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding: 10px;
+  font-weight: bold;
+}
