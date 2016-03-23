@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
+<% if current_user%>
+<h1>Workout/Event Schedule</h1>
 
-<h1>Listing Meetings</h1>
+<div id="events_calendar">
+  <%= render :partial => "calendar", locals: {events: @meetings} %>
+</div>
 
 <table>
   <thead>
@@ -27,3 +31,4 @@
 <br>
 
 <%= link_to 'New Meeting', new_meeting_path %>
+<%end%>

@@ -5,8 +5,28 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 <body>
+  <h1 class='logo'><%= link_to "Beach body", root_path %></h1>
+  <% if current_user %>
+  <h3><%= link_to 'Signout', destroy_user_session_path, :method => :delete %></h3>
+  <nav>
+    <ul>
+      <li> <%= link_to "Events/Workouts", meetings_path %> </li>
+      <li> <%= link_to "Workout Posts", posts_path %> </li>
+      <li> <%= link_to "Photos", photos_path %> </li>
+    </ul>
+  </nav>
+<% else %>
+  <h3><%= link_to 'Signup', new_user_registration_path %></h3>
+  <h3><%= link_to 'Login', new_user_session_path %></h3>
+<% end %>
 
 <%= yield %>
 

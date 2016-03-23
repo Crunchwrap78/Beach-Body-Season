@@ -10,5 +10,12 @@
   <%= @meeting.start_time %>
 </p>
 
+<p>
+<strong>Event</strong>
+<%= @meeting.workout %>
+</p>
+
+<% if current_user %>
 <%= link_to 'Edit', edit_meeting_path(@meeting) %> |
 <%= link_to 'Back', meetings_path %>
+<%end%>

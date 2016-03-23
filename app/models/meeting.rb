@@ -1,3 +1,3 @@
-class Meeting < ActiveRecord::Base
+class Meeting < ActiveRecord::Base  
   belongs_to :user
 end

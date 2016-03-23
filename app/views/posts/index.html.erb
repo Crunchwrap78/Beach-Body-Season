@@ -1,0 +1,12 @@
+<% if current_user %>
+  <%= link_to "Create New Post", new_post_path %>
+<% end %>
+<section>
+  <% @posts.each do |post| %>
+    <article>
+      <h2><%= link_to post.title, post_path(post) %></h2>
+      <time>Updated by <%= post.user.email %> at <%= post.updated_at %></time>
+      <p><%= post.body %></p>
+    </article>
+  <% end %>
+</section>
