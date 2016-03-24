@@ -15707,3 +15707,714 @@ Processing by PostsController#index as HTML
   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
   Rendered posts/index.html.erb within layouts/application (3.4ms)
 Completed 200 OK in 62ms (Views: 58.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 09:44:34 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered posts/index.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 571ms (Views: 524.9ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/assets/custom.self-908a5279bb733f5b92ca2a190d32329530343c9871f8e78cf3cbdf627396fc41.css?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/photos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/scaffolds.self-18b7cb5b7fcd83ac7fb416dda3dcf7d653cd168fea47157175f29a3348c42c21.css?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/meetings.self-0f1ade9b7830417cd2eae7ce40a2921af0a2e75cfe71669bffb90b75b9d5dcaa.css?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/application.self-e7f1c6ea8a9eeadbecb75d8c7270b911d9b754559157cfd79303ae5e9c17f158.css?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/meetings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started GET "/assets/application.self-1162d869a1a34f656c9b0039906d313ed177ff01e9d40fb8087d22087c05302d.js?body=1" for ::1 at 2016-03-24 09:44:35 -0400
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-03-24 09:44:38 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AbEjyFztPvyrpAAVIm/+yVXY4s8bC5i8JdboBn69rtLZJO/kmvB1+uV2SOvyAKyq93VSS2oUKFsRO6vR3zyjwg=="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 09:44:38 -0400
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-03-24 09:44:38 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 95ms (Views: 92.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-03-24 09:44:41 -0400
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-03-24 09:44:41 -0400
+
+
+Started GET "/users/auth/facebook/callback?code=AQALnLjhn2nwi-zLkR4Qvv_jufPqDvbiGu_lt2CjRWk26EC2X2SpXhTcHp17YaZmRSpV3OY_w2ewfiE8smkq8um5BlXqlKgEhk4Ya65lYI2xWelNiEUvGPK-lRHM9Bi4JGRnm2XFuVEClTpbYGjMdzI9aA2vZ6OdMEysaubw_0EyvITgZ9Z-qgy8Ch3T6rJ7nISPNMA-MKcK0UoTcTStrEXPw3WCmRoJ-jAhi2-i6uVQF7sZM8V1DmtZbCcaJwk1gxwYGo0sydRfbvjV69pLBtRENIqOIW3YYHpBgMOImG2KKuLFk9P8VUZAeORwEeYYwC9ZJDpGvOzb0U3cYp0Bbuyr&state=4e277cf552a2ee6b03637fe8f36fd1a564e1fef55b1dc202" for ::1 at 2016-03-24 09:44:42 -0400
+Processing by CallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQALnLjhn2nwi-zLkR4Qvv_jufPqDvbiGu_lt2CjRWk26EC2X2SpXhTcHp17YaZmRSpV3OY_w2ewfiE8smkq8um5BlXqlKgEhk4Ya65lYI2xWelNiEUvGPK-lRHM9Bi4JGRnm2XFuVEClTpbYGjMdzI9aA2vZ6OdMEysaubw_0EyvITgZ9Z-qgy8Ch3T6rJ7nISPNMA-MKcK0UoTcTStrEXPw3WCmRoJ-jAhi2-i6uVQF7sZM8V1DmtZbCcaJwk1gxwYGo0sydRfbvjV69pLBtRENIqOIW3YYHpBgMOImG2KKuLFk9P8VUZAeORwEeYYwC9ZJDpGvOzb0U3cYp0Bbuyr", "state"=>"4e277cf552a2ee6b03637fe8f36fd1a564e1fef55b1dc202"}
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (1.8ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'hayesapples@yahoo.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (10.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "last_sign_in_at", "current_sign_in_at", "last_sign_in_ip", "current_sign_in_ip", "sign_in_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["email", "hayesapples@yahoo.com"], ["encrypted_password", "$2a$10$3c.OFBhLyyerLQIBaxosbOVlMoyd7Mmq8ttqzUn7o1y6xpT9fiVY."], ["last_sign_in_at", "2016-03-24 13:44:43.419180"], ["current_sign_in_at", "2016-03-24 13:44:43.419180"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["created_at", "2016-03-24 13:44:43.421189"], ["updated_at", "2016-03-24 13:44:43.421189"]]
+PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+DETAIL:  Key (email)=(hayesapples@yahoo.com) already exists.
+: INSERT INTO "users" ("email", "encrypted_password", "last_sign_in_at", "current_sign_in_at", "last_sign_in_ip", "current_sign_in_ip", "sign_in_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 269ms (ActiveRecord: 14.8ms)
+
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+DETAIL:  Key (email)=(hayesapples@yahoo.com) already exists.
+: INSERT INTO "users" ("email", "encrypted_password", "last_sign_in_at", "current_sign_in_at", "last_sign_in_ip", "current_sign_in_ip", "sign_in_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"):
+  app/controllers/callbacks_controller.rb:4:in `facebook'
+
+
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (23.5ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.5ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (195.5ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (157.9ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (356.8ms)
+
+
+Started GET "/users/auth/facebook/callback?code=AQALnLjhn2nwi-zLkR4Qvv_jufPqDvbiGu_lt2CjRWk26EC2X2SpXhTcHp17YaZmRSpV3OY_w2ewfiE8smkq8um5BlXqlKgEhk4Ya65lYI2xWelNiEUvGPK-lRHM9Bi4JGRnm2XFuVEClTpbYGjMdzI9aA2vZ6OdMEysaubw_0EyvITgZ9Z-qgy8Ch3T6rJ7nISPNMA-MKcK0UoTcTStrEXPw3WCmRoJ-jAhi2-i6uVQF7sZM8V1DmtZbCcaJwk1gxwYGo0sydRfbvjV69pLBtRENIqOIW3YYHpBgMOImG2KKuLFk9P8VUZAeORwEeYYwC9ZJDpGvOzb0U3cYp0Bbuyr&state=4e277cf552a2ee6b03637fe8f36fd1a564e1fef55b1dc202" for ::1 at 2016-03-24 09:46:32 -0400
+Processing by CallbacksController#failure as HTML
+  Parameters: {"code"=>"AQALnLjhn2nwi-zLkR4Qvv_jufPqDvbiGu_lt2CjRWk26EC2X2SpXhTcHp17YaZmRSpV3OY_w2ewfiE8smkq8um5BlXqlKgEhk4Ya65lYI2xWelNiEUvGPK-lRHM9Bi4JGRnm2XFuVEClTpbYGjMdzI9aA2vZ6OdMEysaubw_0EyvITgZ9Z-qgy8Ch3T6rJ7nISPNMA-MKcK0UoTcTStrEXPw3WCmRoJ-jAhi2-i6uVQF7sZM8V1DmtZbCcaJwk1gxwYGo0sydRfbvjV69pLBtRENIqOIW3YYHpBgMOImG2KKuLFk9P8VUZAeORwEeYYwC9ZJDpGvOzb0U3cYp0Bbuyr", "state"=>"4e277cf552a2ee6b03637fe8f36fd1a564e1fef55b1dc202"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-03-24 09:46:33 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 70ms (Views: 68.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-908a5279bb733f5b92ca2a190d32329530343c9871f8e78cf3cbdf627396fc41.css?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/application.self-e7f1c6ea8a9eeadbecb75d8c7270b911d9b754559157cfd79303ae5e9c17f158.css?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/scaffolds.self-18b7cb5b7fcd83ac7fb416dda3dcf7d653cd168fea47157175f29a3348c42c21.css?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/meetings.self-0f1ade9b7830417cd2eae7ce40a2921af0a2e75cfe71669bffb90b75b9d5dcaa.css?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/photos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/meetings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/assets/application.self-1162d869a1a34f656c9b0039906d313ed177ff01e9d40fb8087d22087c05302d.js?body=1" for ::1 at 2016-03-24 09:46:33 -0400
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-03-24 09:46:39 -0400
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-03-24 09:46:39 -0400
+
+
+Started GET "/users/auth/facebook/callback?code=AQBE9wUSDu9QqB3RL89l_ycN6BH5fQMfLAZKEIppFMo-yAbzbQ-sdQvzBkmoE8SU9hZjUfwJvqrPS8BWLDs3vZy9ADbf2-PcgZeGMG-7f326R9DslyTZ7sBXL1tqym7DC2C4Jhc87NB5C8-5o87ndKSq11gYEr0Egfddd2_glFCe5bTyEnCO9YIY6gjBc5pIpD3JwVs6TfZHYfcSQuWWIL6YrSaLnZRjT6ExMzezNv_0yOu0z4UjQrfP0NsEhyF_PHCwZ-QdIILx4LvkMJwKFqo7uMHtLZmJn5JrdzBlckv_4ycvpWfS77QKishjhbmZqnyOvkbDTjw5FPpsUgdDZQJl&state=9489df21c207e842e673c648b6926645f95b7c3f9594e9b1" for ::1 at 2016-03-24 09:46:39 -0400
+Processing by CallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQBE9wUSDu9QqB3RL89l_ycN6BH5fQMfLAZKEIppFMo-yAbzbQ-sdQvzBkmoE8SU9hZjUfwJvqrPS8BWLDs3vZy9ADbf2-PcgZeGMG-7f326R9DslyTZ7sBXL1tqym7DC2C4Jhc87NB5C8-5o87ndKSq11gYEr0Egfddd2_glFCe5bTyEnCO9YIY6gjBc5pIpD3JwVs6TfZHYfcSQuWWIL6YrSaLnZRjT6ExMzezNv_0yOu0z4UjQrfP0NsEhyF_PHCwZ-QdIILx4LvkMJwKFqo7uMHtLZmJn5JrdzBlckv_4ycvpWfS77QKishjhbmZqnyOvkbDTjw5FPpsUgdDZQJl", "state"=>"9489df21c207e842e673c648b6926645f95b7c3f9594e9b1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'hayesapples@yahoo.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (2.7ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "last_sign_in_at", "current_sign_in_at", "last_sign_in_ip", "current_sign_in_ip", "sign_in_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "hayesapples@yahoo.com"], ["encrypted_password", "$2a$10$w5UKXmkNuSz2ZY.YZTINbeqFudTcSoQvqgIf8iETs4goXfueiJbCS"], ["last_sign_in_at", "2016-03-24 13:46:40.915132"], ["current_sign_in_at", "2016-03-24 13:46:40.915132"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["created_at", "2016-03-24 13:46:40.916061"], ["updated_at", "2016-03-24 13:46:40.916061"]]
+PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+DETAIL:  Key (email)=(hayesapples@yahoo.com) already exists.
+: INSERT INTO "users" ("email", "encrypted_password", "last_sign_in_at", "current_sign_in_at", "last_sign_in_ip", "current_sign_in_ip", "sign_in_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 4.2ms)
+
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+DETAIL:  Key (email)=(hayesapples@yahoo.com) already exists.
+: INSERT INTO "users" ("email", "encrypted_password", "last_sign_in_at", "current_sign_in_at", "last_sign_in_ip", "current_sign_in_ip", "sign_in_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"):
+  app/controllers/callbacks_controller.rb:4:in `facebook'
+
+
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.7ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.5ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.4ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (121.7ms)
+
+
+Started GET "/users/auth/facebook/callback?code=AQBE9wUSDu9QqB3RL89l_ycN6BH5fQMfLAZKEIppFMo-yAbzbQ-sdQvzBkmoE8SU9hZjUfwJvqrPS8BWLDs3vZy9ADbf2-PcgZeGMG-7f326R9DslyTZ7sBXL1tqym7DC2C4Jhc87NB5C8-5o87ndKSq11gYEr0Egfddd2_glFCe5bTyEnCO9YIY6gjBc5pIpD3JwVs6TfZHYfcSQuWWIL6YrSaLnZRjT6ExMzezNv_0yOu0z4UjQrfP0NsEhyF_PHCwZ-QdIILx4LvkMJwKFqo7uMHtLZmJn5JrdzBlckv_4ycvpWfS77QKishjhbmZqnyOvkbDTjw5FPpsUgdDZQJl&state=9489df21c207e842e673c648b6926645f95b7c3f9594e9b1" for ::1 at 2016-03-24 10:00:26 -0400
+Processing by CallbacksController#failure as HTML
+  Parameters: {"code"=>"AQBE9wUSDu9QqB3RL89l_ycN6BH5fQMfLAZKEIppFMo-yAbzbQ-sdQvzBkmoE8SU9hZjUfwJvqrPS8BWLDs3vZy9ADbf2-PcgZeGMG-7f326R9DslyTZ7sBXL1tqym7DC2C4Jhc87NB5C8-5o87ndKSq11gYEr0Egfddd2_glFCe5bTyEnCO9YIY6gjBc5pIpD3JwVs6TfZHYfcSQuWWIL6YrSaLnZRjT6ExMzezNv_0yOu0z4UjQrfP0NsEhyF_PHCwZ-QdIILx4LvkMJwKFqo7uMHtLZmJn5JrdzBlckv_4ycvpWfS77QKishjhbmZqnyOvkbDTjw5FPpsUgdDZQJl", "state"=>"9489df21c207e842e673c648b6926645f95b7c3f9594e9b1"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-03-24 10:00:27 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 85ms (Views: 73.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/custom.self-908a5279bb733f5b92ca2a190d32329530343c9871f8e78cf3cbdf627396fc41.css?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/meetings.self-0f1ade9b7830417cd2eae7ce40a2921af0a2e75cfe71669bffb90b75b9d5dcaa.css?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/photos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/application.self-e7f1c6ea8a9eeadbecb75d8c7270b911d9b754559157cfd79303ae5e9c17f158.css?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/scaffolds.self-18b7cb5b7fcd83ac7fb416dda3dcf7d653cd168fea47157175f29a3348c42c21.css?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/meetings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/assets/application.self-1162d869a1a34f656c9b0039906d313ed177ff01e9d40fb8087d22087c05302d.js?body=1" for ::1 at 2016-03-24 10:00:27 -0400
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-03-24 10:00:30 -0400
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-03-24 10:00:30 -0400
+
+
+Started GET "/users/auth/facebook/callback?code=AQAebTep33WCZYIagKsf26e5bvGJFJRWlnFJbT-oWoVMBIHxCiCx36UVjnRtGmMlP3ddnMz3E7eTwsu67WBP0Sd9GiDpCokFAw_QpmFkUGNcs25m8m5_aWGKT1y4WJuQZw44HuzRwZVFm7aRnqh6c_KPVksimxvmRmaZ96azdMr8CZDTrQ7IZZQuogNmOFYAdM0dpQiZ3tS5w8pyavYF5cF2L4XZOsAYqLBIITPPLZbvqsxs2ezPxj1yaehUNOwVDg_A0jx6EtPemFJADCc-thnFm7645gNwIpvN6hqr9JGB-jaU4qbdtBbn_M5VkKa7X2UBNxIhC3qvyuCTn_bA11Jr&state=58dec7ff297073d121e58ed08d3f7977a20549799a671b1b" for ::1 at 2016-03-24 10:00:30 -0400
+Processing by CallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQAebTep33WCZYIagKsf26e5bvGJFJRWlnFJbT-oWoVMBIHxCiCx36UVjnRtGmMlP3ddnMz3E7eTwsu67WBP0Sd9GiDpCokFAw_QpmFkUGNcs25m8m5_aWGKT1y4WJuQZw44HuzRwZVFm7aRnqh6c_KPVksimxvmRmaZ96azdMr8CZDTrQ7IZZQuogNmOFYAdM0dpQiZ3tS5w8pyavYF5cF2L4XZOsAYqLBIITPPLZbvqsxs2ezPxj1yaehUNOwVDg_A0jx6EtPemFJADCc-thnFm7645gNwIpvN6hqr9JGB-jaU4qbdtBbn_M5VkKa7X2UBNxIhC3qvyuCTn_bA11Jr", "state"=>"58dec7ff297073d121e58ed08d3f7977a20549799a671b1b"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'hayesapples@yahoo.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "last_sign_in_at", "current_sign_in_at", "last_sign_in_ip", "current_sign_in_ip", "sign_in_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["email", "hayesapples@yahoo.com"], ["encrypted_password", "$2a$10$RIG70cxF7J4g.DrjGB3PKuDW.C7Pr089p6ideV9kVulVfxUcjtP9q"], ["last_sign_in_at", "2016-03-24 14:00:31.788501"], ["current_sign_in_at", "2016-03-24 14:00:31.788501"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["created_at", "2016-03-24 14:00:31.789335"], ["updated_at", "2016-03-24 14:00:31.789335"]]
+PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+DETAIL:  Key (email)=(hayesapples@yahoo.com) already exists.
+: INSERT INTO "users" ("email", "encrypted_password", "last_sign_in_at", "current_sign_in_at", "last_sign_in_ip", "current_sign_in_ip", "sign_in_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 3.8ms)
+
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+DETAIL:  Key (email)=(hayesapples@yahoo.com) already exists.
+: INSERT INTO "users" ("email", "encrypted_password", "last_sign_in_at", "current_sign_in_at", "last_sign_in_ip", "current_sign_in_ip", "sign_in_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"):
+  app/controllers/callbacks_controller.rb:4:in `facebook'
+
+
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.0ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.9ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.9ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.4ms)
+
+
+Started GET "/users/auth/facebook/callback?code=AQAebTep33WCZYIagKsf26e5bvGJFJRWlnFJbT-oWoVMBIHxCiCx36UVjnRtGmMlP3ddnMz3E7eTwsu67WBP0Sd9GiDpCokFAw_QpmFkUGNcs25m8m5_aWGKT1y4WJuQZw44HuzRwZVFm7aRnqh6c_KPVksimxvmRmaZ96azdMr8CZDTrQ7IZZQuogNmOFYAdM0dpQiZ3tS5w8pyavYF5cF2L4XZOsAYqLBIITPPLZbvqsxs2ezPxj1yaehUNOwVDg_A0jx6EtPemFJADCc-thnFm7645gNwIpvN6hqr9JGB-jaU4qbdtBbn_M5VkKa7X2UBNxIhC3qvyuCTn_bA11Jr&state=58dec7ff297073d121e58ed08d3f7977a20549799a671b1b" for ::1 at 2016-03-24 10:01:27 -0400
+Processing by CallbacksController#failure as HTML
+  Parameters: {"code"=>"AQAebTep33WCZYIagKsf26e5bvGJFJRWlnFJbT-oWoVMBIHxCiCx36UVjnRtGmMlP3ddnMz3E7eTwsu67WBP0Sd9GiDpCokFAw_QpmFkUGNcs25m8m5_aWGKT1y4WJuQZw44HuzRwZVFm7aRnqh6c_KPVksimxvmRmaZ96azdMr8CZDTrQ7IZZQuogNmOFYAdM0dpQiZ3tS5w8pyavYF5cF2L4XZOsAYqLBIITPPLZbvqsxs2ezPxj1yaehUNOwVDg_A0jx6EtPemFJADCc-thnFm7645gNwIpvN6hqr9JGB-jaU4qbdtBbn_M5VkKa7X2UBNxIhC3qvyuCTn_bA11Jr", "state"=>"58dec7ff297073d121e58ed08d3f7977a20549799a671b1b"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-03-24 10:01:28 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 89ms (Views: 77.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/custom.self-908a5279bb733f5b92ca2a190d32329530343c9871f8e78cf3cbdf627396fc41.css?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/photos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/meetings.self-0f1ade9b7830417cd2eae7ce40a2921af0a2e75cfe71669bffb90b75b9d5dcaa.css?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/scaffolds.self-18b7cb5b7fcd83ac7fb416dda3dcf7d653cd168fea47157175f29a3348c42c21.css?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/application.self-e7f1c6ea8a9eeadbecb75d8c7270b911d9b754559157cfd79303ae5e9c17f158.css?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/meetings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/assets/application.self-1162d869a1a34f656c9b0039906d313ed177ff01e9d40fb8087d22087c05302d.js?body=1" for ::1 at 2016-03-24 10:01:28 -0400
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-03-24 10:01:31 -0400
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-03-24 10:01:31 -0400
+
+
+Started GET "/users/auth/facebook/callback?code=AQC6NwtaSGZFhJjZ9CxUC9up3OYyMMSKweoZ8kFbvZWb0GRCSv-f1yPFZjjTuCp2jEumW9PN0NopMx_9eqB42Aa8d4QYB1I609Kt4QY6aYjP2jCtUlDdLosRvNIrF4tPn4vOExzM7UY6z9-zK5X-hAnSnEX9YPOIlkpKyftWJF8qSHdIW-XkK8TCPfhIX_bnfXN8kBjXbZmCgZA1tNYEy0Pro8NqgEPV5HnWDIirQiT3ISCxZP39maTht2CUY0l6nFUcf8OEfbUvdQA6dvx5lcRYHMg5NhtAOMO4butpLUZNVyHwEmcFXls7rgf5vkDwcK8ez_EX9YwcrHecu6vHqErd&state=5c5f64ad6744efd9031d4b272d1a14630825074eb68c419d" for ::1 at 2016-03-24 10:01:31 -0400
+Processing by CallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQC6NwtaSGZFhJjZ9CxUC9up3OYyMMSKweoZ8kFbvZWb0GRCSv-f1yPFZjjTuCp2jEumW9PN0NopMx_9eqB42Aa8d4QYB1I609Kt4QY6aYjP2jCtUlDdLosRvNIrF4tPn4vOExzM7UY6z9-zK5X-hAnSnEX9YPOIlkpKyftWJF8qSHdIW-XkK8TCPfhIX_bnfXN8kBjXbZmCgZA1tNYEy0Pro8NqgEPV5HnWDIirQiT3ISCxZP39maTht2CUY0l6nFUcf8OEfbUvdQA6dvx5lcRYHMg5NhtAOMO4butpLUZNVyHwEmcFXls7rgf5vkDwcK8ez_EX9YwcrHecu6vHqErd", "state"=>"5c5f64ad6744efd9031d4b272d1a14630825074eb68c419d"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'hayesapples@yahoo.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "last_sign_in_at", "current_sign_in_at", "last_sign_in_ip", "current_sign_in_ip", "sign_in_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "hayesapples@yahoo.com"], ["encrypted_password", "$2a$10$qNiGfTHOah4h8gP5BBLGG.D6Fb3QYJSZqdJpW/2Gx7AP8rTDE0iDe"], ["last_sign_in_at", "2016-03-24 14:01:32.669225"], ["current_sign_in_at", "2016-03-24 14:01:32.669225"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["created_at", "2016-03-24 14:01:32.670053"], ["updated_at", "2016-03-24 14:01:32.670053"]]
+PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+DETAIL:  Key (email)=(hayesapples@yahoo.com) already exists.
+: INSERT INTO "users" ("email", "encrypted_password", "last_sign_in_at", "current_sign_in_at", "last_sign_in_ip", "current_sign_in_ip", "sign_in_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 4.3ms)
+
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+DETAIL:  Key (email)=(hayesapples@yahoo.com) already exists.
+: INSERT INTO "users" ("email", "encrypted_password", "last_sign_in_at", "current_sign_in_at", "last_sign_in_ip", "current_sign_in_ip", "sign_in_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"):
+  app/controllers/callbacks_controller.rb:4:in `facebook'
+
+
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.7ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.6ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.0ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Crunchwrap78/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.8ms)
+
+
+Started GET "/users/auth/facebook/callback?code=AQC6NwtaSGZFhJjZ9CxUC9up3OYyMMSKweoZ8kFbvZWb0GRCSv-f1yPFZjjTuCp2jEumW9PN0NopMx_9eqB42Aa8d4QYB1I609Kt4QY6aYjP2jCtUlDdLosRvNIrF4tPn4vOExzM7UY6z9-zK5X-hAnSnEX9YPOIlkpKyftWJF8qSHdIW-XkK8TCPfhIX_bnfXN8kBjXbZmCgZA1tNYEy0Pro8NqgEPV5HnWDIirQiT3ISCxZP39maTht2CUY0l6nFUcf8OEfbUvdQA6dvx5lcRYHMg5NhtAOMO4butpLUZNVyHwEmcFXls7rgf5vkDwcK8ez_EX9YwcrHecu6vHqErd&state=5c5f64ad6744efd9031d4b272d1a14630825074eb68c419d" for ::1 at 2016-03-24 10:01:58 -0400
+Processing by CallbacksController#failure as HTML
+  Parameters: {"code"=>"AQC6NwtaSGZFhJjZ9CxUC9up3OYyMMSKweoZ8kFbvZWb0GRCSv-f1yPFZjjTuCp2jEumW9PN0NopMx_9eqB42Aa8d4QYB1I609Kt4QY6aYjP2jCtUlDdLosRvNIrF4tPn4vOExzM7UY6z9-zK5X-hAnSnEX9YPOIlkpKyftWJF8qSHdIW-XkK8TCPfhIX_bnfXN8kBjXbZmCgZA1tNYEy0Pro8NqgEPV5HnWDIirQiT3ISCxZP39maTht2CUY0l6nFUcf8OEfbUvdQA6dvx5lcRYHMg5NhtAOMO4butpLUZNVyHwEmcFXls7rgf5vkDwcK8ez_EX9YwcrHecu6vHqErd", "state"=>"5c5f64ad6744efd9031d4b272d1a14630825074eb68c419d"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-03-24 10:01:59 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 92ms (Views: 81.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/custom.self-908a5279bb733f5b92ca2a190d32329530343c9871f8e78cf3cbdf627396fc41.css?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/photos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/meetings.self-0f1ade9b7830417cd2eae7ce40a2921af0a2e75cfe71669bffb90b75b9d5dcaa.css?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/scaffolds.self-18b7cb5b7fcd83ac7fb416dda3dcf7d653cd168fea47157175f29a3348c42c21.css?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/application.self-e7f1c6ea8a9eeadbecb75d8c7270b911d9b754559157cfd79303ae5e9c17f158.css?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/meetings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/assets/application.self-1162d869a1a34f656c9b0039906d313ed177ff01e9d40fb8087d22087c05302d.js?body=1" for ::1 at 2016-03-24 10:01:59 -0400
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-03-24 10:02:01 -0400
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-03-24 10:02:02 -0400
+
+
+Started GET "/users/auth/facebook/callback?code=AQCvzPWohpm0-cjz4zqbfvYddZiWOdv9vwQ3mAuxJI0LJ0Ce4RZrqFOeZ1M0Nnyu0C_hGHp8EDiUnRPMwPNoGERQsRzKmxj5z53DnaSQnqRXqiwzOCAs-UfNk_j6yPe33qqIfHAfs4AMZAWt3ZnGSTRhP7wjPBp9uG0k4EjR41KX7k20tjzQ6bjV9JwCZUGXmmhPIFt5iqKR9b3edJosiVWrn0Xsh1aXXai16QGdqmGyFao7Guv8Z8YKr81yJ1DFnEhvELR9gH6dkZykJLHrnFvl9WQnGiRVeN3YVuA8Mg80D2ic5PIVApc5H2P0OdJHhEber-kPI1zOz5F8DuGz8fmm&state=07a2a4b9819fb314d5f7f8ffc99515edab0407beee928925" for ::1 at 2016-03-24 10:02:02 -0400
+Processing by CallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCvzPWohpm0-cjz4zqbfvYddZiWOdv9vwQ3mAuxJI0LJ0Ce4RZrqFOeZ1M0Nnyu0C_hGHp8EDiUnRPMwPNoGERQsRzKmxj5z53DnaSQnqRXqiwzOCAs-UfNk_j6yPe33qqIfHAfs4AMZAWt3ZnGSTRhP7wjPBp9uG0k4EjR41KX7k20tjzQ6bjV9JwCZUGXmmhPIFt5iqKR9b3edJosiVWrn0Xsh1aXXai16QGdqmGyFao7Guv8Z8YKr81yJ1DFnEhvELR9gH6dkZykJLHrnFvl9WQnGiRVeN3YVuA8Mg80D2ic5PIVApc5H2P0OdJHhEber-kPI1zOz5F8DuGz8fmm", "state"=>"07a2a4b9819fb314d5f7f8ffc99515edab0407beee928925"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "hayesapples@yahoo.com"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", "2016-03-24 14:02:03.137397"], ["sign_in_count", 2], ["updated_at", "2016-03-24 14:02:03.139961"], ["id", 2]]
+  [1m[35m (2.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 10:02:03 -0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered posts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 86ms (Views: 78.8ms | ActiveRecord: 3.1ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-03-24 10:02:10 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9+Xlj9NKNWdgRhgVC2FNwmtP2O1N9dRGNoIMT8na43fiZGsd+6bi++gUXFq1NJzKkiRBjOnMZ6Lycbn5Gs7ylA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 10:02:10 -0400
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-03-24 10:02:10 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-03-24 10:02:15 -0400
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-03-24 10:02:15 -0400
+
+
+Started GET "/users/auth/facebook/callback?code=AQDILWgfazgTVhWG_QJ9RLhXhu1QlHQO3bGczZhWhbfPLx5LKEywmv3MgBhbxV558BacoJH6rZ1NcoHX_kZZItDdgcxHm1_Ezb9fChrNaPWZmRk2yqWX8ePtwvCSlomGMuJkGnYWdZYmjWraUiFBMOWHAjVlUjnyoYd-QtczhfZLyP3FnOfZpdLW4cIa33OjZRzZlINP5oNE0Hqj79MI-CDbGxNpz_5vA8yC16R1X9hqxBQZdcb7GKIuat6m8729ykd_a5io0yLvu1561O5QloeYkDE56d9g9igWB_VOwtOVGRKFSbKwL14fqVwU9f4zpVLzXAjPgUcrshnqDnazd6qR&state=2e670a7988c79854c24a97f7116c001c609c7e41c306307d" for ::1 at 2016-03-24 10:02:16 -0400
+Processing by CallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDILWgfazgTVhWG_QJ9RLhXhu1QlHQO3bGczZhWhbfPLx5LKEywmv3MgBhbxV558BacoJH6rZ1NcoHX_kZZItDdgcxHm1_Ezb9fChrNaPWZmRk2yqWX8ePtwvCSlomGMuJkGnYWdZYmjWraUiFBMOWHAjVlUjnyoYd-QtczhfZLyP3FnOfZpdLW4cIa33OjZRzZlINP5oNE0Hqj79MI-CDbGxNpz_5vA8yC16R1X9hqxBQZdcb7GKIuat6m8729ykd_a5io0yLvu1561O5QloeYkDE56d9g9igWB_VOwtOVGRKFSbKwL14fqVwU9f4zpVLzXAjPgUcrshnqDnazd6qR", "state"=>"2e670a7988c79854c24a97f7116c001c609c7e41c306307d"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "hayesapples@yahoo.com"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["last_sign_in_at", "2016-03-24 14:02:03.137397"], ["current_sign_in_at", "2016-03-24 14:02:17.195200"], ["sign_in_count", 3], ["updated_at", "2016-03-24 14:02:17.197679"], ["id", 2]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 10:02:17 -0400
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 74ms (Views: 71.5ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-03-24 10:02:19 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8tT5zZNU/cHky1qHPlt3ky1ed1f0QDC7mnbHT/nGNsUWWRTzVdhaHjepGzjfiYigpWrOa5xAjSuUkMDCP/xD6Q=="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 10:02:19 -0400
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-03-24 10:02:19 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 74ms (Views: 73.3ms | ActiveRecord: 0.0ms)

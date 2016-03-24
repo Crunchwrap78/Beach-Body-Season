@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
   has_many :meetings
 
   def self.from_omniauth(auth)
-      where(id: auth.id).first_or_create do |user|
+      find_or_create_by(email: auth.info.email) do |user|
         user.id = auth.id
         user.email = auth.info.email
         user.password = Devise.friendly_token[0,20]
