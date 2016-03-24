@@ -1,11 +1,11 @@
 <% if current_user %>
-  <%= link_to "Create New Post", new_post_path %>
+  <%= link_to "Create New Post", new_post_path, class: "btn btn-info"%>
 <% end %>
 <section>
   <% @posts.each do |post| %>
     <article>
-      <h2><%= link_to post.title, post_path(post) %></h2>
-      <time>Updated by <%= post.user.email %> at <%= post.updated_at %></time>
+      <h2><%= link_to post.title, post_path(post), class: "posts"%></h2>
+      <time>Updated by <%= post.user.email %> at <%= post.updated_at.strftime("%Y-%m-%d %l:%M %p") %></time>
       <p><%= post.body %></p>
     </article>
   <% end %>

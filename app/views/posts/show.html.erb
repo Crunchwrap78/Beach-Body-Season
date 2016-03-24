@@ -1,0 +1,30 @@
+<%= link_to "&larr; Back".html_safe, posts_path %>
+<article>
+  <h2><%= @post.title %></h2>
+  <time>Updated by <%= @post.user.email %> at <%= @post.updated_at %></time>
+  <p><%= @post.body %></p>
+  <% if current_user && current_user == @post.user %>
+    <%= link_to "Edit Post", edit_post_path(@post), class: "btn btn-info" %>
+    <%= link_to "Delete Post", post_path(@post), method: :delete, class: "btn btn-info" %>
+  <% end %>
+  <div class='comments'>
+
+
+  <h3>Comments</h3>
+  <% if current_user %>
+    <%= link_to "Add new comment", new_post_comment_path(@post), class: "btn btn-info" %>
+  <% end %>
+  <% @post.comments.each do |comment| %>
+    <div>
+      <time>Updated by <%= comment.user.email %> at <%= comment.updated_at %></time>
+      <p>
+	<%= comment.body %>
+      </p>
+      <% if current_user && current_user == comment.user %>
+	<%= link_to "Edit", edit_post_comment_path(@post, comment), class: "btn btn-info" %> 
+	<%= link_to "Delete", post_comment_path(@post, comment), method: :delete, class: "btn btn-info" %>
+      <% end %>
+    </div>
+  <% end %>
+  </div>
+</article>

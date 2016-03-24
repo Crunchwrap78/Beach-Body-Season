@@ -16,6 +16,6 @@
 </p>
 
 <% if current_user %>
-<%= link_to 'Edit', edit_meeting_path(@meeting) %> |
-<%= link_to 'Back', meetings_path %>
+<%= link_to 'Edit', edit_meeting_path(@meeting), class: "btn btn-info" %> 
+<%= link_to 'Back', meetings_path, class: "btn btn-info" %>
 <%end%>
