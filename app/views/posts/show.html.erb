@@ -7,6 +7,13 @@
     <%= link_to "Edit Post", edit_post_path(@post), class: "btn btn-info" %>
     <%= link_to "Delete Post", post_path(@post), method: :delete, class: "btn btn-info" %>
   <% end %>
+  <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+
   <div class='comments'>
 
 
@@ -21,7 +28,7 @@
 	<%= comment.body %>
       </p>
       <% if current_user && current_user == comment.user %>
-	<%= link_to "Edit", edit_post_comment_path(@post, comment), class: "btn btn-info" %> 
+	<%= link_to "Edit", edit_post_comment_path(@post, comment), class: "btn btn-info" %>
 	<%= link_to "Delete", post_comment_path(@post, comment), method: :delete, class: "btn btn-info" %>
       <% end %>
     </div>
